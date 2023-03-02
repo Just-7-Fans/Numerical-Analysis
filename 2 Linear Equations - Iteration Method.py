@@ -17,7 +17,6 @@ def Conjugate_Gradient(A, b):
     _x[0] = 1  # random initial value
     _r = b - numpy.matmul(A, _x)  # initial residual
     _p = _r  # initial search direction
-    k1, k2 = 0, 0
 
     for i in range(0, 8):
         tempVector = numpy.matmul(A, _p)
